@@ -9,3 +9,6 @@ class Post(models.Model):
 # Create your models here.
     def __str__(self):
         return f'[{self.pk}]{self.title}' #post 제목 보여주는 __str__()함수
+
+    def get_absolute_url(self):
+        return f'/blog/{self.pk}/'
