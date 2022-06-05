@@ -10,4 +10,4 @@ def index(request):
             'posts' : posts,
         }
     )
-# Create your views here.
+
